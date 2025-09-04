@@ -1,4 +1,8 @@
 from logging import basicConfig, INFO, info
+
+from dotenv import load_dotenv  # <-- NUEVO
+load_dotenv()  # <-- carga .env del directorio actual
+
 from tornado.httpserver import HTTPServer
 from tornado.ioloop import IOLoop
 
